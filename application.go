@@ -225,9 +225,9 @@ func (app application) handleEventAdd(obj interface{}) {
 	sentryEvent.Level = getSentryLevel(evt)
 	sentryEvent.Timestamp = evt.ObjectMeta.CreationTimestamp.Time
 	sentryEvent.Fingerprint = []string{
-		evt.Source.Component,
-		evt.Type,
-		evt.Reason,
+		//evt.Source.Component,
+		//evt.Type,
+		//evt.Reason,
 		evt.Message,
 	}
 
